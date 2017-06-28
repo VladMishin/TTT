@@ -1,2 +1,0 @@
-# TTT
-First project
