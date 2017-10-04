@@ -1,3 +1,7 @@
+package main.java;
+
+import main.Player;
+
 /**
  * Created by User on 03.10.2017.
  */
