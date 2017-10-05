@@ -14,14 +14,17 @@ public class Figure {
     }
 
     public String getFigureY (){
+
         return figureY;
         }
 
     public void setFigureX (String x){
+
         this.figureX = x;
     }
 
     public void setFigureY (String y){
+
         this.figureY = y;
     }
 }
