@@ -1,10 +1,7 @@
 package main.java;
 
-import main.Player;
+import main.java.Player;
 
-/**
- * Created by User on 03.10.2017.
- */
 public class Field {
     private final int sizeField;
     private final int numberPosition;
@@ -12,10 +9,10 @@ public class Field {
     private final Player[] figureInField;
 
     public void setFigureInField (Player player, int position){
-        figureInField[position] = player);
-        if () {
-          status = player;
-        }
+        figureInField[position] = player;
+        //    if () {
+        // status = player;
+       //   }
 
     }
 
@@ -24,7 +21,7 @@ public class Field {
     }
 
     public String getStatus (){
-        return status;
+        return this.status;
     }
 
     public void setNumberPosition (int position) {
@@ -32,6 +29,6 @@ public class Field {
     }
 
     public int getNumberPosition (){
-        return numberPosition;
+        return this.numberPosition;
     }
 }

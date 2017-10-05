@@ -16,14 +16,10 @@ public class Figure {
         }
 
     public void setFigureX (String x){
-
         this.figureX = x;
-        }
-
-    public void setFigureY (String y){
-
-        this.figureY = y;
-        }
     }
 
+    public void setFigureY (String y){
+        this.figureY = y;
+    }
 }

@@ -7,10 +7,11 @@ import main.java.Figure;
  */
 public class Player {
     private final String name;
+
     private final Figure figure;
 
-    public void setNamePlayer(String name){
-        this.name = name;
+    public void setNamePlayer(String name1){
+      this.name = name1;
     }
 
     public String getNamePlayer () {
@@ -22,6 +23,6 @@ public class Player {
     }
 
     public Figure getFigurePlayer () {
-        return this.figure;
+        return figure;
     }
 }

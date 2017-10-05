@@ -1,31 +1,27 @@
 package main.java;
 
 import main.Player;
-import main.java.Field;
 
-/**
- * Created by User on 03.10.2017.
- */
 public class Game {
-    private final String name;
+    private final String nameGame;
+
     private final Field[] fields;
+
     private final Player statusGame;
 
     public void serNameGame(String name){
-        this.name = name;
+        this.nameGame = name;
     }
 
     public String getNameGame(){
-        return name;
+        return this.nameGame;
     }
 
    public void setFields (Field field) {
-        field[] = field; //вместо массива надо использовать коллекцию set
+   //     fields[] = field; //вместо массива надо использовать коллекцию set
    }
 
    public Field[] getFileds (){
         return fields;
    }
-
-
 }
