@@ -1,15 +1,19 @@
 package main.java;
 
-import main.java.Player;
+import main.Player;
 
 public class Field {
-    private final int sizeField;
-    private final int numberPosition;
-    private final Player status;
-    private final Player[] figureInField;
+    private int sizeField;
+
+    private int numberPosition;
+
+    private Player status;
+
+    private Player[] figureInField;
 
     public void setFigureInField (Player player, int position){
-        figureInField[position] = player;
+        this.figureInField[position] = player;
+
         //    if () {
         // status = player;
        //   }
@@ -20,7 +24,7 @@ public class Field {
         this.sizeField = size;
     }
 
-    public String getStatus (){
+    public Player getStatus (){
         return this.status;
     }
 

@@ -3,17 +3,18 @@ package main.java;
 import main.Player;
 
 public class Game {
-    private final String nameGame;
 
-    private final Field[] fields;
+    private  String nameGame;
 
-    private final Player statusGame;
+    private  Field[] fields;
+
+    private  Player statusGame;
 
     public void serNameGame(String name){
         this.nameGame = name;
     }
 
-    public String getNameGame(){
+    public String getNameGame() {
         return this.nameGame;
     }
 
@@ -21,7 +22,7 @@ public class Game {
    //     fields[] = field; //вместо массива надо использовать коллекцию set
    }
 
-   public Field[] getFileds (){
+   public Field[] getFileds() {
         return fields;
    }
 }
