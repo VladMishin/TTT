@@ -4,20 +4,18 @@ import main.java.Figure;
 
 public class Player {
 
-    private String name;
+    private final String name;
 
-    private Figure figure;
+    private final Figure figure;
 
-    public void setNamePlayer(String name1){
-        this.name = name1;
+    public Player (final String name,
+                   final Figure figure){
+        this.name = name;
+        this.figure = figure;
     }
 
     public String getNamePlayer () {
         return this.name;
-    }
-
-    public void setFigurePlayer(Figure figure){
-        this.figure = figure;
     }
 
     public Figure getFigurePlayer () {
