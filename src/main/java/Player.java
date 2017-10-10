@@ -78,6 +78,7 @@ public class Player {
         public String getNickName (){
             return this.nickName;
         }
+
         public Player build () {
             return new Player(this);
         }
