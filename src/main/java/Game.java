@@ -1,6 +1,8 @@
 package main.java;
 
-import main.Player;
+import main.java.Player;
+
+import main.java.Field;
 
 public class Game {
 

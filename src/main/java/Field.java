@@ -1,38 +1,41 @@
 package main.java;
 
-import main.Player;
+import java.awt.*;
+
+import main.java.Figure;
 
 public class Field {
-    private int sizeField;
 
-    private int numberPosition;
+    private static final int FIELD_SIZE = 3;
 
-    private Player status;
+    private static final int MIN_COORDINATE = 0;
 
-    private Player[] figureInField;
+    private static final int MAX_COORDINATE = FIELD_SIZE;
 
-    public void setFigureInField (Player player, int position){
-        this.figureInField[position] = player;
+    private final Figure[][] field = new Figure[FIELD_SIZE][FIELD_SIZE];
 
-        //    if () {
-        // status = player;
-       //   }
+    //private int numberPosition;
+    //private Player status;
+    //private Player[] figureInField;
 
+    public int getSize (){
+        return FIELD_SIZE;
     }
 
-    public void setSizeField(int size) {
-        this.sizeField = size;
+    public Figure getFigure (final Point point){
+        return field[point.x][point.y];
     }
 
-    public Player getStatus (){
-        return this.status;
+    public void setFigure (final Point point, final Figure figure){
+        this.field[point.x][point.y] = figure;
     }
 
-    public void setNumberPosition (int position) {
-        this.numberPosition = position;
+    private boolean checkPoint (final Point point){
+        return checkCoordinate(point.x) && checkCoordinate(point.y);
     }
 
-    public int getNumberPosition (){
-        return this.numberPosition;
+    private boolean checkCoordinate (final int coordinate){
+        return coordinate >= MIN_COORDINATE && coordinate <= MAX_COORDINATE;
     }
+
 }

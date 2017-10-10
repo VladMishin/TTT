@@ -1,5 +1,7 @@
 package main.java;
 
+import main.java.Figure;
+
 public class Player {
 
     private final String name;
@@ -18,5 +20,10 @@ public class Player {
 
     public Figure getFigurePlayer() {
         return figure;
+    }
+
+    public static void main(String[] args) {
+
+        System.out.print("ggg");
     }
 }
